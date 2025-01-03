@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: gmt
+server:
+  port: 8098
+app:
+  partner_unique_id: <your_partner_unique_id>
+  password: <your_password>
+  base_url: <base_url>
