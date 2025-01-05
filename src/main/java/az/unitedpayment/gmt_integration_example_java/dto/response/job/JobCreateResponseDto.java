@@ -30,21 +30,11 @@ public class JobCreateResponseDto implements SearchMarker, Data {
     @JsonDeserialize(using = MultiFormatDateDeserializer.class)
     private ZonedDateTime updatedAt;
 
-    @JsonProperty("deleted_at")
-    @JsonDeserialize(using = MultiFormatDateDeserializer.class)
-    private ZonedDateTime deletedAt;
-
     @JsonProperty("up_reference")
     private String upReference;
 
     @JsonProperty("partner_job_id")
     private String partnerJobId;
-
-    @JsonProperty("paysend_id")
-    private String paysendId;
-
-    @JsonProperty("paysend_global_id")
-    private String paysendGlobalId;
 
     private JobStatus status;
 

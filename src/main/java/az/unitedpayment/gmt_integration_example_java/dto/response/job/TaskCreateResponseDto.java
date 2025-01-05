@@ -34,10 +34,6 @@ public class TaskCreateResponseDto implements SearchMarker {
     @JsonDeserialize(using = MultiFormatDateDeserializer.class)
     private ZonedDateTime updatedAt;
 
-    @JsonProperty("deleted_at")
-    @JsonDeserialize(using = MultiFormatDateDeserializer.class)
-    private ZonedDateTime deletedAt;
-
     @JsonProperty("up_reference")
     private String upReference;
 
